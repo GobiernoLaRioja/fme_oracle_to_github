@@ -1,4 +1,7 @@
-fme_oracle_to_github
-====================
+FME code for updating geographic information from Oracle database to GitHub
 
-FME code for updating geographic information from Oracle data base to GithHub
+It's a public IDErioja project
+
+More information about IDErioja is available at:
+<br />[www.iderioja.org](http://www.iderioja.org)
+<br />[@iderioja](http://twitter.com/iderioja)
