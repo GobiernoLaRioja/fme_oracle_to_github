@@ -6,7 +6,7 @@ GitHub allows us to store [our open data] (https://github.com/iderioja/base_dato
 
 The workbench exports Oracle tables to geoJSON, uses the git version control system to manage the versions of the files and the inclusion in Github.
 
-In GitHub repository there is a layer list file [FeatureTypesToRead.txt](https://github.com/iderioja/base_datos_geografica/FeatureTypesToRead.txt "layer list") defining which Oracle tables are read and ultimately translated to geoJSON. FME reads the layer list from GitHub using Python Scripted parameter (git pull).
+In GitHub repository there is a layer list file [FeatureTypesToRead.txt](https://github.com/iderioja/base_datos_geografica/blob/master/FeatureTypesToRead.txt "layer list") defining which Oracle tables are read and ultimately translated to geoJSON. FME reads the layer list from GitHub using Python Scripted parameter (git pull).
 
 ![workbench image 1](/images/workbench_image01.jpg "Workbench image 1")
 
