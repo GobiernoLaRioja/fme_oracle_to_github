@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Fme oracle to github : FME code for updating geographic information from Oracle database to GitHub" />
+    <meta name="description" content="FME Oracle to GitHub : FME code for updating geographic information from Oracle database to GitHub" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Fme oracle to github</title>
+    <title>FME Oracle to GitHub</title>
   </head>
 
   <body>
@@ -18,7 +18,7 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/iderioja/fme_oracle_to_github">View on GitHub</a>
 
-          <h1 id="project_title">Fme oracle to github</h1>
+          <h1 id="project_title">FME Oracle to GitHub</h1>
           <h2 id="project_tagline">FME code for updating geographic information from Oracle database to GitHub</h2>
 
             <section id="downloads">
@@ -31,11 +31,28 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p>FME code for updating geographic information from Oracle database to GitHub</p>
+        <h3>
+<a name="--sharing-open-data-on-github-using-fme-tool" class="anchor" href="#--sharing-open-data-on-github-using-fme-tool"><span class="octicon octicon-link"></span></a>
+<a href="http://www.iderioja.org"><img src="http://www.iderioja.larioja.org/imagenes/logo_iderioja_56x70.gif" alt="Icono"></a>  <a href="http://iderioja.github.io/fme_oracle_to_github/" title="Oracle to GitHub">Sharing Open Data on GitHub using FME tool</a>
+</h3>
 
-<p>It's a public IDErioja project</p>
+<p>We use <a href="http://www.safe.com/" title="Safe Software">FME</a> based tool to automatically update geographical git repositories. For that purpose, we designed a workbench with FME to create GeoJSON files from different spatial formats (Oracle database table in our workbench) and host them in a GitHub repository.</p>
 
-<p>More information about IDErioja is available at:
+<p>GitHub allows us to store <a href="https://github.com/iderioja/base_datos_geografica" title="IDErioja geographic database">our open data</a> and use as a collaborative mapping framework where users can contribute to the edition of the GeoJSON files (geojson.io, Chrome extension). This has huge implications for data collaboration.</p>
+
+<p>The workbench exports Oracle tables to geoJSON, uses the git version control system to manage the versions of the files and the inclusion in Github.</p>
+
+<p>In GitHub repository there is a layer list file <a href="https://github.com/iderioja/base_datos_geografica/FeatureTypesToRead.txt" title="layer list">FeatureTypesToRead.txt</a> defining which Oracle tables are read and ultimately translated to geoJSON. FME reads the layer list from GitHub using Python Scripted parameter (git pull).</p>
+
+<p><img src="https://github.com/iderioja/fme_oracle_to_github/raw/master/images/workbench_image01.jpg" alt="workbench image 1" title="Workbench image 1"></p>
+
+<p><img src="https://github.com/iderioja/fme_oracle_to_github/raw/master/images/workbench_image02.jpg" alt="workbench image 2" title="Workbench image 2"></p>
+
+<p>FME commits updated geoJSON files to GitHub in Shutdown TCL script (git push). </p>
+
+<p>The project was presented in the <a href="http://www.safe.com/fmeuc/automatic-updating-geographical-git-repositories/" title="FME 2014 Conference">FME International User Conference 2014</a></p>
+
+<p>More information about IDErioja project is available at:
 <br><a href="http://www.iderioja.org">www.iderioja.org</a>
 <br><a href="http://twitter.com/iderioja">@iderioja</a></p>
       </section>
@@ -44,7 +61,7 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Fme oracle to github maintained by <a href="https://github.com/iderioja">iderioja</a></p>
+        <p class="copyright">FME Oracle to GitHub maintained by <a href="https://github.com/iderioja">iderioja</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
